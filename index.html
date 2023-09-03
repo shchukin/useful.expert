@@ -64,6 +64,9 @@
         </div>
     </div>
 
+    <!-- Изначальный вариант: колоночная структура, имеется секция "Нас советуют".
+         Алсо ytWidget внутри был закомментирован ещё раньше.
+
     <div class="section">
         <div class="grid">
             <div class="grid__item grid__item--15 grid_sm_100">
@@ -71,8 +74,8 @@
             </div>
         </div>
         <div class="grid">
-            <!--<div id="ytWidget"></div>
-            <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=ru&widgetTheme=light&autoMode=true" type="text/javascript"></script>-->
+            <div id="ytWidget"></div>
+            <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=ru&widgetTheme=light&autoMode=true" type="text/javascript"></script>
 
             <div class="grid__item grid__item--12 grid_xs_100">
                 <p>Защищаем интересы клиента с помощью документов, консультаций и переговоров. Экономим клиенту деньги, время и нервы.</p>
@@ -100,6 +103,26 @@
             </div>
         </div>
     </div>
+    -->
+
+    <!-- Обновлённый вариант: удаляем "Нас советуют".
+         Заменяем грид на max-width.
+         Немного правим стили .head внутри (инлайновые стили).
+    -->
+    <div class="section" style="max-width: 860px;">
+        <h2 class="head" style="margin-right: 0; max-width: none;">Юридические услуги для большого и маленького бизнеса. Без лишних слов и затрат</h2>
+        <p>Защищаем интересы клиента с помощью документов, консультаций и переговоров. Экономим клиенту деньги, время и нервы.</p>
+        <ul class="desc-examples">
+            <li class="desc-examples__item">Добавим строчку в соглашении —<br/><span class="desc-examples__mark">клиент сэкономит миллион рублей на судебных процессах</span></li>
+            <li class="desc-examples__item">Оставим в договоре две страницы из двадцати —<br/><span class="desc-examples__mark">клиент быстрее заключит договор и получит деньги</span></li>
+            <li class="desc-examples__item">Уберём пару пунктов из устава —<br/><span class="desc-examples__mark">директор не сядет в тюрьму за превышение полномочий</span></li>
+            <li class="desc-examples__item">Возьмём на себя рутинные процедуры —<br/><span class="desc-examples__mark">клиент потратит сэкономленное время на развитие бизнеса</span></li>
+        </ul>
+        <p>Документы и услуги защищают бизнес только, если устраняют настоящие риски. Поэтому сначала изучаем бизнес и находим риски, и только потом разрабатываем документы. Если собрать документ сразу, получится бесполезная бумажка.</p>
+        <p>Защитим бизнес любого калибра: поможем стартапам, инвесторам и предпринимателям решить задачу с учётом их особенностей.</p>
+        <p>Открыто пишем о расценках. Можете быть уверены в том, что бюджет и дедлайн всегда останутся неизменными.</p>
+    </div>
+
 
     <div class="section rates">
         <div class="grid">
@@ -268,6 +291,7 @@
         </div>
     </div>
 
+    <!-- Временно скрываем:
     <div class="section">
         <div class="feedback" id="feedback">
             <h2 class="feedback__head">Клиенты и отзывы</h2>
@@ -508,6 +532,7 @@
             </div>
         </div>
     </div>
+    -->
 
     <div class="section">
         <div class="scrollpane">
