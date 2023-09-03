@@ -98,6 +98,7 @@
 
     .partners {
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
         .partners__ribbon {
             display: inline-flex;
