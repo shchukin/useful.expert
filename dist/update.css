@@ -10,13 +10,13 @@
 
 }
 
-/*  Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
 
 }
 
-/*  Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+/*  Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
 
 }
 
@@ -47,6 +47,19 @@
 
 
 
+.desktop-only {
+
+}
+
+@media (max-width: 991.98px) {
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+
+
 .hide-scrollbar {
     scrollbar-width: none; /* hide scrollbar in Firefox */
     -ms-overflow-style: none; /* hide scrollbar in Edge */
@@ -70,6 +83,7 @@
         padding: var(--section-padding);
         margin-left: auto;
         margin-right: auto;
+        border-right: 7px solid transparent; /* Потому что соседние секции кривые, например у .support-mode стоит margin-right: 7px; */
     }
         .partners__item {
             flex-shrink: 0;
@@ -80,7 +94,7 @@
                 vertical-align: top;
             }
 
-@media (width < 1120px) {
+@media (max-width: 1199.98px) {
 
     .partners {
         overflow-x: auto;
@@ -90,7 +104,20 @@
             align-items: stretch;
             gap: 39px;
             vertical-align: top;
+            border-right: none;
         }
 }
 
 
+
+
+.service {
+    max-width: 860px;
+    padding: var(--section-padding);
+    margin-left: auto;
+    margin-right: auto;
+}
+    .service__heading {
+        margin-right: 0;
+        max-width: none;
+    }
