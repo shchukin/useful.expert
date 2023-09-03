@@ -1,0 +1,9 @@
+.feedback__head {
+  font-size: 46px;
+  line-height: 78px;
+  font-family: var(--mono-bold-family);
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}

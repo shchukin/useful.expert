@@ -1,0 +1,12 @@
+.clients-satisfact__of {
+  width: 100px;
+  text-align: right;
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: 100px;
+  right: 9px;
+  font-family: var(--sans-serif-family);
+  color: #6e2bd0;
+}

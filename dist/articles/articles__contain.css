@@ -1,0 +1,12 @@
+.articles__contain {
+  display: block;
+  position: relative;
+  z-index: 4;
+  height: 100%;
+}
+.articles__item--middle .articles__contain {
+  padding-right: 40px;
+}
+.articles__item--wide .articles__contain {
+  padding-right: 110px;
+}

@@ -1,0 +1,11 @@
+.feedback__name {
+  padding: 6px 0 0;
+}
+.feedback__preview + .feedback__name:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 60px;
+  height: 60px;
+  width: 15px;
+}

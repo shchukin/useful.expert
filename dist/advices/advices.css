@@ -1,0 +1,15 @@
+.advices {
+  font-family: var(--sans-serif-family);
+  position: relative;
+  margin-left: -10px;
+}
+.advices:after {
+  content: '';
+  position: absolute;
+  top: -42px;
+  right: 30px;
+  background: url('advices__stars.png');
+  width: 76.5px;
+  height: 47.5px;
+  background-size: 76.5px 47.5px;
+}

@@ -1,0 +1,13 @@
+.advices__link {
+  color: #5f15cd;
+  cursor: pointer;
+  border-bottom: 1px solid #5f15cd;
+  border-bottom: 1px solid rgba(95, 21, 205, 0.3);
+  transition: color 0.4s ease-out, border-color 0.4s ease-out, background-color 0.4s ease-out;
+}
+.advices__link:hover {
+  color: #ff5400;
+  border-color: #ff5400;
+  border-color: rgba(255, 84, 0, 0.4);
+  transition: color 0s linear, border-color 0s linear, background-color 0s linear;
+}

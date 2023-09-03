@@ -1,0 +1,33 @@
+.articles__name {
+  z-index: 4;
+  padding: 4.3% 0 0;
+  border-bottom: 1px solid #5f15cd;
+  border-bottom: 1px solid rgba(95,21,205,0.3);
+}
+a.articles__item:hover .articles__name,
+  a.articles__name:hover {
+  border-color: #ff5400;
+  border-color: rgba(255,84,0,0.4);
+}
+.articles__item--short .articles__name {
+  font-size: 15px;
+  line-height: 30px;
+}
+.articles__item--middle .articles__name {
+  font-size: 24px;
+  line-height: 36px;
+}
+.articles__item--wide .articles__name {
+  font-size: 24px;
+  line-height: 36px;
+}
+.articles__item--stared .articles__name:before {
+  content: '';
+  position: absolute;
+  right: -43px;
+  top: -43px;
+  width: 43px;
+  height: 42px;
+  background: url('articles__item--stared.png');
+  background-size: 43px 42px;
+}

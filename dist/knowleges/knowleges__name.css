@@ -1,0 +1,44 @@
+.knowleges__name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 35px;
+  bottom: 0;
+  border: 1px solid #D6CEE5;
+  padding: 15px 25px 15px 15px;
+  z-index: 2;
+  transition: border-color 0.4s ease-out, color 0.4s ease-out;
+  color: #5f15cd;
+}
+.knowleges__tile:hover .knowleges__name {
+  color: #ff5400;
+}
+.knowleges__tile:hover .knowleges__name {
+  border-color: rgb(255, 204, 179);
+  transition: border-color 0s linear, color 0s linear;
+}
+.knowleges__tile--whited .knowleges__name {
+  background-color: #fff;
+  border: 0;
+}
+.knowleges__tile--whited .knowleges__name:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid #D6CEE5;
+  transition: border-color 0.4s ease-out;
+}
+.knowleges__tile--whited:hover .knowleges__name:after {
+  border-color: rgb(255, 204, 179);
+  transition: border-color 0s linear;
+}
+.knowleges__tile--more .knowleges__name {
+  top: 10px;
+  left: 10px;
+  bottom: -10px;
+  background-color: #F1F0EC;
+  right: 25px;
+}

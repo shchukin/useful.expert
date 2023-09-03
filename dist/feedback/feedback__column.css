@@ -1,0 +1,8 @@
+.feedback__column {
+  width: 43.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+.feedback__column + .feedback__column {
+  margin-left: 13%;
+}

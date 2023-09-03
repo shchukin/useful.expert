@@ -1,0 +1,23 @@
+.footer {
+  font-family: var(--sans-serif-family);
+  padding: 81px 0 50px;
+  position: relative;
+  margin-top: -70px;
+}
+.footer:after {
+  content: '';
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #d8d8d4;
+}
+.footer a {
+  border-bottom: 1px solid #6824cf;
+  border-bottom: 1px solid rgba(104, 36, 207, 0.3);
+}
+.footer a:hover {
+  border-bottom: 1px solid #ff5400;
+  border-bottom: 1px solid rgba(255, 84, 0, 0.4);
+}

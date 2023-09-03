@@ -1,0 +1,10 @@
+.articles__item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: var(--default-font-size);
+  box-sizing: border-box;
+  height: 206px;
+  padding: 30px 50px 30px 30px;
+  position: relative;
+  margin-bottom: 40px;
+}

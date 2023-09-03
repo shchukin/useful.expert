@@ -1,0 +1,65 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f1f0ec;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 var(--default-font-size)/var(--default-line-height) var(--sans-family);
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+a,
+.g-link {
+  color: #5f15cd;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.4s ease-out, border-color 0.4s ease-out, background-color 0.4s ease-out;
+}
+
+a:hover, .g-link:hover {
+  color: #ff5400;
+  transition: color 0s linear, border-color 0s linear, background-color 0s linear;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+* + p {
+  margin-top: 23px;
+}
+
+.g-clr {
+  height: 0;
+  background-color: transparent;
+  border: 0;
+  margin-top: -6px;
+  clear: both;
+}
+
+.g-quote-link span {
+  color: #5f15cd;
+  border-bottom: 1px solid #5f15cd;
+  border-bottom: 1px solid rgba(95, 21, 205, 0.3);
+  transition: color 0.4s ease-out, border-color 0.4s ease-out, background-color 0.4s ease-out;
+}
+
+.g-quote-link:hover span {
+  color: #ff5400;
+  border-color: #ff5400;
+  border-color: rgba(255, 84, 0, 0.4);
+  transition: color 0s linear, border-color 0s linear, background-color 0s linear;
+}

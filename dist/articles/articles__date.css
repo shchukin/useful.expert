@@ -1,0 +1,20 @@
+.articles__date {
+  display: block;
+  color: #000;
+  font-family: var(--sans-serif-family);
+  font-size: 15px;
+  line-height: 36px;
+}
+.articles__item--short .articles__date {
+  margin-top: 0;
+}
+.articles__item--middle .articles__date {
+  position: absolute;
+  right: 10px;
+  bottom: -2px;
+}
+.articles__item--wide .articles__date {
+  position: absolute;
+  right: 10px;
+  bottom: -2px;
+}

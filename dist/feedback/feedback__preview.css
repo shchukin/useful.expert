@@ -1,0 +1,16 @@
+.feedback__preview {
+  overflow: hidden;
+  border-radius: 50%;
+  line-height: 0;
+  font-size: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin-right: 15px;
+  margin-top: 4px;
+  width: 60px;
+  height: 60px;
+}
+.feedback__preview img {
+  max-width: 100%;
+}

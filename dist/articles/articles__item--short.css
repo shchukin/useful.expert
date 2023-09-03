@@ -1,0 +1,6 @@
+.articles__item--short {
+  width: 35%;
+  text-align: center;
+  font-family: var(--sans-serif-family);
+  padding: 30px 60px 30px 40px;
+}

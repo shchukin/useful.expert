@@ -1,0 +1,11 @@
+.advices__item + .advices__item {
+    margin-top: 15px;
+}
+.advices__item a {
+    border-bottom: 1px solid #6e2bd0;
+    border-bottom: 1px solid rgba(110, 43, 208, 0.4);
+}
+.advices__item a:hover {
+    border-bottom: 1px solid #ff5400;
+    border-bottom: 1px solid rgba(255, 84, 0, 0.4);
+}

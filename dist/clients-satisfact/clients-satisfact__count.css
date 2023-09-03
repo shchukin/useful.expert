@@ -1,0 +1,7 @@
+.clients-satisfact__count {
+  font-size: 96px;
+  line-height: 78px;
+  font-family: var(--mono-bold-family);
+  font-weight: bold;
+  letter-spacing: -8px;
+}

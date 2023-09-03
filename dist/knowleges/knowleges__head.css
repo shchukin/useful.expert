@@ -1,0 +1,8 @@
+.knowleges__head {
+  font-family: var(--mono-bold-family);
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  margin-top: 14px;
+}

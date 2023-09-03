@@ -1,0 +1,17 @@
+.advices__become-link {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: #fe5c0c;
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #9a3807;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.advices__become-link:hover {
+  background-color: #ee4e00;
+  color: #fff;
+}

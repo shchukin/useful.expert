@@ -1,0 +1,6 @@
+.wrap {
+  min-width: 1000px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 70px;
+}

@@ -1,0 +1,37 @@
+.knowleges__tile--more {
+  position: absolute;
+  right: 0;
+  bottom: -11px;
+  cursor: pointer;
+  display: none;
+}
+.knowleges__tile--more:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 35px;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #D6CEE5;
+  transition: border-color 0.4s ease-out;
+}
+.knowleges__tile--more:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 30px;
+  left: 0;
+  bottom: -5px;
+  border: 1px solid #D6CEE5;
+  margin: 5px 0 0 5px;
+  background-color: #F1F0EC;
+  transition: border-color 0.4s ease-out;
+}
+.knowleges__tile--more:hover:before,
+  .knowleges__tile--more:hover:after {
+  transition: border-color 0s linear;
+  border-color: rgb(255, 204, 179);
+}
+.knowleges__tiles--scoped .knowleges__tile--more {
+  display: block;
+}

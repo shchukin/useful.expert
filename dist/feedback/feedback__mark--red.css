@@ -1,0 +1,5 @@
+.feedback__mark--red {
+  background-color: #f4d1bd;
+  padding: 1px 0;
+  box-shadow: 4px 0 0 #f4d1bd, -4px 0 0 #f4d1bd;
+}

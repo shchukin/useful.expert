@@ -1,0 +1,5 @@
+.feedback__mark--blue {
+  background-color: #d4c4e6;
+  padding: 1px 0;
+  box-shadow: 4px 0 0 #d4c4e6, -4px 0 0 #d4c4e6;
+}

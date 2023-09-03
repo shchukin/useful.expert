@@ -1,0 +1,6 @@
+.feedback__item p + p {
+    margin-top: 14px;
+}
+.feedback__item + .feedback__item {
+    margin-top: 40px;
+}

@@ -1,0 +1,11 @@
+.knowleges__tile--stared:before {
+    content: '';
+    position: absolute;
+    right: 25px;
+    top: -10px;
+    width: 32px;
+    height: 31px;
+    background: url('knowleges__tile--stared.png');
+    background-size: 32px 31px;
+    z-index: 3;
+}

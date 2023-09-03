@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Загрузить принципы с гугла</title>
+  
+<link rel="alternate" hreflang="ru" href="http://useful.expert">
+<link rel="alternate" hreflang="en" href="http://en.useful.expert">
+<link rel="alternate" hreflang="el" href="http://el.useful.expert">
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_2912f6a090f8c5a1dc8b6511d94a449a5'
+    });
+</script>
+</head>
+<body>
+  <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+  <script type="text/html" id="tmpl-knowledges-section">
+    <div class="l-knowleges-section">
+      <div class="knowleges">
+        <h2 class="knowleges__head"><%= category %></h2>
+
+        <div class="knowleges__tiles<% if (count > limit) {%> knowleges__tiles--scoped<% } %>">
+          <%= content %>
+        </div>
+      </div>
+    </div>
+
+  </script>
+
+  <script type="text/html" id="tmpl-knowledges-tile">
+    <a class="knowleges__tile<% if (star == "*") { %> knowleges__tile--whited knowleges__tile--stared<% } %>" href="<%= link %>">
+      <span class="knowleges__name"><%= title %></span>
+    </a>
+
+  </script>
+
+  <script type="text/html" id="tmpl-knowledges-more">
+    <span class="knowleges__tile knowleges__tile--more" data-index="<%= index %>">
+      <span class="knowleges__name">Показать ещё <%= count %>&nbsp;<%= word %></span>
+    </span>
+
+  </script>
+
+  <script src="dist/vendor.min.js"></script>
+  <script>
+  <!--
+
+  function getWord (count, options) {
+    count = +count
+
+    if (count > 4 && count < 21) {
+      return options[2]
+    }
+
+    count = '' + count
+    count = + count.substr(count.length - 1)
+
+    if (count === 1) {
+      return options[0]
+    } else if (count > 4 || count === 0) {
+      return options[2]
+    }
+
+    return options[1]
+  }
+
+  window.addEventListener('load', function () {
+    var ADVICES_API = {
+      url: 'https://script.google.com/macros/s/AKfycbxlBj7KEl8Sj8lTl273xdKznixpU8LMrKNvex0J9ozRXqwacWw/exec',
+      ss: '1zVD0cdYyxNWMPeWxZZJUwCSz-MTqnEU-Hwgvk3-SIBQ'
+    }
+
+    function getAdvices (options) {
+      return fetchData(ADVICES_API, options)
+    }
+
+    function handleResponse (data) {
+      var category
+      var hasOwn = Array.prototype.hasOwnProperty
+      var items
+      var sections = ''
+      var section
+      var knowlegesSection = document.getElementById('knowleges-section')
+      var knowlegesContain = document.getElementById('knowleges-contain')
+      var knowlegesLoader = document.getElementById('knowleges-loader')
+      var sectionTmpl = document.getElementById('tmpl-knowledges-section').innerHTML
+      var tileTmpl = document.getElementById('tmpl-knowledges-tile').innerHTML
+      var moreTmpl = document.getElementById('tmpl-knowledges-more').innerHTML
+      var tiles
+      var count
+      var index = 0
+
+      for (category in data) if (hasOwn.call(data, category)) {
+        items = data[category]
+
+        tiles = ''
+
+        for (item in items) if (hasOwn.call(items, item)) {
+          tiles += Templater(tileTmpl, {
+            title: items[item].Title,
+            star: items[item].Stared,
+            link: items[item].Link,
+          })
+        }
+
+        if (items.length > 12) {
+          count = items.length - 7
+          tiles += Templater(moreTmpl, {
+            count: count,
+            word: getWord(count, [
+              'совет',
+              'совета',
+              'советов'
+            ]),
+            index: index
+          })
+        }
+
+        section = Templater(sectionTmpl, {
+          category: category,
+          content: tiles,
+          count: items.length,
+          limit: 12
+        })
+
+        sections += section
+        index++
+      }
+
+      document.getElementById('textarea').value = sections
+    }
+
+    getAdvices().success(handleResponse)
+  })
+
+  //-->
+  </script>
+</body>
+</html>
