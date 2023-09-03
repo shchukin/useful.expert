@@ -1,0 +1,14 @@
+/* Обновления Антона начиная от сентября 2023.Подробности в Notion */
+
+.partners {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+    .partners__item {
+        display: block;
+        width: fit-content;
+    }
+        .partners__logo {
+            vertical-align: top;
+        }
